@@ -40,8 +40,9 @@ class LoginPage {
     }
 
     async submitButtonClick() {
+        await this.submitButton.waitForClickable({ timeout: 10000 })
         await this.submitButton.click();
-        await this.errorMessageEmail.waitForDisplayed({ timeout: 8000 });
+        await this.errorMessageEmail.waitForDisplayed({ timeout: 10000 });
     }
 
     get errorMessageEmail() {

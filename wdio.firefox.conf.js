@@ -54,9 +54,9 @@ exports.config = {
         maxInstances: 1,
         //
         browserName: 'firefox',
-        'moz:firefoxOptions': {
-            args: ['--headless']
-        },
+      //  'moz:firefoxOptions': {
+      //      args: ['--headless']
+      //  },
         acceptInsecureCerts: true
     }
     ],
@@ -194,9 +194,9 @@ exports.config = {
      */
     // before: function (capabilities, specs) {
     // },
-    before: function (capabilities, specs, browser) {
-        browser.setWindowSize(1300, 900)
-    },
+    //before: function (capabilities, specs, browser) {
+    //    browser.setWindowSize(1300, 900)
+    //},
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name

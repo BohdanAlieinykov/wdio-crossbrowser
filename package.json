@@ -14,8 +14,8 @@
     "scripts": {
         "wdio": "wdio run wdio.conf.js",
         "Chrome": "wdio run wdio.chrome.conf.js",
-        "loginChrome": "wdio run ./wdio.firefox.conf.js --spec login.e2e.js",
-        "mainPageChrome": "wdio run ./wdio.firefox.conf.js --spec mainPage.e2e.js",
+        "loginChrome": "wdio run ./wdio.chrome.conf.js --spec login.e2e.js",
+        "mainPageChrome": "wdio run ./wdio.chrome.conf.js --spec mainPage.e2e.js",
         "Firefox":"wdio run wdio.firefox.conf.js",
         "loginFirefox": "wdio run ./wdio.firefox.conf.js --spec login.e2e.js",
         "mainPageFirefox": "wdio run ./wdio.firefox.conf.js --spec mainPage.e2e.js"

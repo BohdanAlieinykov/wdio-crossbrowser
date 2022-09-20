@@ -1,6 +1,7 @@
 const LoginPage = require("../pageobjects/login.page");
 
 describe("Login page", () => {
+
     it("Error message appears when user try to login with empty input", async () => {
         await browser.url("https://telnyx.com/");
         await LoginPage.acceptCookieClick();
@@ -10,7 +11,7 @@ describe("Login page", () => {
         await expect(LoginPage.errorMessagePassword).toHaveText("Required");
     });
 
-    it('Error message "Please enter a valid email address." appears when user email input without "@"', async () => {
+    it.only('Error message "Please enter a valid email address." appears when user email input without "@"', async () => {
         await browser.url("https://telnyx.com/");
         await LoginPage.loginButtonClick();
         await LoginPage.invalidEmailInput("monatanagmail.com");
@@ -88,6 +89,7 @@ describe("Login page", () => {
         await browser.url("https://telnyx.com/");
         await LoginPage.loginButtonClick();
         await LoginPage.singleSignOnBtnClick();
+        await browser.pause(3000)
         await LoginPage.companyNameBtnLinkClick();
         await expect(LoginPage.businessNameLabel).toBeDisplayed();
         await expect(LoginPage.businessNameInputField).toExist();
