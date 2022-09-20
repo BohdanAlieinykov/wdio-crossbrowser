@@ -8,10 +8,12 @@ class LoginPage {
     }
 
     async acceptCookieClick() {
+        await this.acceptCookie.waitForClickable({ timeout: 10000 });
         await this.acceptCookie.click();
     }
 
     async loginButtonClick() {
+        await this.loginButton.waitForClickable({ timeout: 10000 });
         await this.loginButton.click();
     }
 
