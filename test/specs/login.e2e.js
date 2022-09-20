@@ -1,15 +1,6 @@
 const LoginPage = require("../pageobjects/login.page");
 
 describe("Login page", () => {
-    it.only("User can sucsessfully login in account", async () => {
-        await browser.url("https://telnyx.com/");
-        await LoginPage.acceptCookieClick();
-        await LoginPage.loginButtonClick();
-        await LoginPage.login("ejuki038@gmail.com", "PaSwOrD12-34");
-        await expect(browser).toHaveUrlContaining("search-numbers");
-        await expect(LoginPage.headerText).toHaveTextContaining("Numbers / Search & Buy Numbers");
-        await LoginPage.sighOutBtnClick();
-    });
 
     it("Error message appears when user try to login with empty input", async () => {
         await browser.url("https://telnyx.com/");

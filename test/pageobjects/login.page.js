@@ -35,13 +35,6 @@ class LoginPage {
         return $('[data-icon="angle-down"]');
     }
 
-    async sighOutBtnClick() {
-        await this.dropDownIcon.waitForDisplayed({ timeout: 10000 });
-        await this.dropDownIcon.scrollIntoView();
-        await this.dropDownIcon.moveTo();
-        await this.sighOutBtn.click();
-    }
-
     get headerText() {
         return $("div.offset--sideNav:nth-child(2) h1");
     }
@@ -166,13 +159,6 @@ class LoginPage {
         await this.emailInputField.setValue(email);
     }
 
-    async login(username, password) {
-        await this.emailInputField.setValue(username);
-        await this.passwordInputField.setValue(password);
-        await this.submitButton.waitForClickable({ timeout: 8000 });
-        await this.submitButtonClick();
-        await browser.pause(8000);
-    }
 }
 
 module.exports = new LoginPage();
