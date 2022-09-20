@@ -65,7 +65,7 @@ describe("Login page", () => {
         await expect(browser).toHaveUrlContaining("microsoft");
     });
 
-    it.only('User directed on sigh-up page by click "Sign up" button from login page', async () => {
+    it('User directed on sigh-up page by click "Sign up" button from login page', async () => {
         await browser.url("https://telnyx.com/");
         await LoginPage.loginButtonClick();
         await LoginPage.signUpBtnClick();
