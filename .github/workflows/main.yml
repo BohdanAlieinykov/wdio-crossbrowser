@@ -26,7 +26,8 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          npm run wdio
+          npm run Firefox
+          npm run Chrome
           npx allure generate [allure-results] && allure open
           
           
