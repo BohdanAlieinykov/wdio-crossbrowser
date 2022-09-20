@@ -40,7 +40,7 @@ class LoginPage {
     }
 
     async submitButtonClick() {
-        await this.submitButton.waitForClickable({ timeout: 10000 })
+        await this.submitButton.waitForClickable({ timeout: 10000 });
         await this.submitButton.click();
         await this.errorMessageEmail.waitForDisplayed({ timeout: 10000 });
     }
@@ -126,6 +126,7 @@ class LoginPage {
     }
 
     async singleSignOnBtnClick() {
+        await this.singleSignOnBtn.waitForClickable({ timeout: 10000 });
         await this.singleSignOnBtn.click();
     }
 
