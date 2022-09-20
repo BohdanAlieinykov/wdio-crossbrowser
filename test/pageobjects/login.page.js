@@ -62,6 +62,7 @@ class LoginPage {
     }
 
     async listAnotherProvidersClick() {
+        await this.listAnotherProviders.waitForClickable({ timeout: 10000 });
         await this.listAnotherProviders.click();
     }
 
@@ -70,6 +71,7 @@ class LoginPage {
     }
 
     async gitHubLoginClick() {
+        await this.gitHubLogin.waitForClickable({ timeout: 10000 });
         await this.gitHubLogin.click();
     }
 
@@ -78,6 +80,7 @@ class LoginPage {
     }
 
     async facebookLoginClick() {
+        await this.facebookLogin.waitForClickable({ timeout: 10000 });
         await this.facebookLogin.click();
     }
 
@@ -90,6 +93,7 @@ class LoginPage {
     }
 
     async passwordResetBtnCLick() {
+        await this.passwordResetBtn.waitForClickable({ timeout: 10000 });
         await this.passwordResetBtn.click();
     }
 
@@ -98,10 +102,12 @@ class LoginPage {
     }
 
     async microsoftLoginBtnClick() {
+        await this.microsoftLogin.waitForClickable({ timeout: 10000 });
         await this.microsoftLogin.click();
     }
 
     async linkedInLoginClick() {
+        await this.linkedInLogin.waitForClickable({ timeout: 10000 });
         await this.linkedInLogin.click();
     }
 
@@ -118,6 +124,7 @@ class LoginPage {
     }
 
     async signUpBtnClick() {
+        await this.signUpBtn.waitForClickable({ timeout: 10000 });
         await this.signUpBtn.click();
     }
 
@@ -151,6 +158,7 @@ class LoginPage {
     }
 
     async companyNameBtnLinkClick() {
+        await this.companyNameBtnLink.waitForClickable({ timeout: 10000 });
         await this.companyNameBtnLink.click();
     }
 
