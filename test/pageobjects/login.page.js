@@ -13,7 +13,7 @@ class LoginPage {
     }
 
     async loginButtonClick() {
-        await this.loginButton.waitForClickable({ timeout: 10000 });
+        await this.loginButton.waitForClickable({ timeout: 20000 });
         await this.loginButton.click();
     }
 
