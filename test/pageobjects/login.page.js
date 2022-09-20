@@ -41,6 +41,7 @@ class LoginPage {
 
     async submitButtonClick() {
         await this.submitButton.click();
+        await this.errorMessageEmail.waitForDisplayed({ timeout: 8000 });
     }
 
     get errorMessageEmail() {
@@ -155,10 +156,13 @@ class LoginPage {
         return $('[aria-label="signup-form"] [type="submit"]');
     }
 
+    async createAccountBttn() {
+        await this.createAccountBtn.waitForDisplayed({ timeout: 8000 });
+    }
+
     async invalidEmailInput(email) {
         await this.emailInputField.setValue(email);
     }
-
 }
 
 module.exports = new LoginPage();

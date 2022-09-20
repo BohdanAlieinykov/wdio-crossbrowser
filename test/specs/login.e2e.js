@@ -1,10 +1,9 @@
 const LoginPage = require("../pageobjects/login.page");
 
 describe("Login page", () => {
-
     it("Error message appears when user try to login with empty input", async () => {
         await browser.url("https://telnyx.com/");
-        await LoginPage.acceptCookieClick()
+        await LoginPage.acceptCookieClick();
         await LoginPage.loginButtonClick();
         await LoginPage.submitButtonClick();
         await expect(LoginPage.errorMessageEmail).toHaveText("Required");
@@ -66,13 +65,15 @@ describe("Login page", () => {
         await expect(browser).toHaveUrlContaining("microsoft");
     });
 
-    it('User directed on sigh-up page by click "Sign up" button from login page', async () => {
+    it.only('User directed on sigh-up page by click "Sign up" button from login page', async () => {
         await browser.url("https://telnyx.com/");
         await LoginPage.loginButtonClick();
         await LoginPage.signUpBtnClick();
+        await browser.pause(3000)
         await browser.switchWindow("https://telnyx.com/sign-up");
-        await expect(browser).toHaveUrlContaining("sign-up");
+        await LoginPage.createAccountBttn()
         await expect(LoginPage.createAccountBtn).toBeDisplayed();
+        await expect(browser).toHaveUrlContaining("sign-up");
     });
 
     it('Company email input field appears, when user click "Single Sign-On button"', async () => {
