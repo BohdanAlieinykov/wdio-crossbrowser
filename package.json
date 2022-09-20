@@ -1,0 +1,23 @@
+{
+    "name": "webdriverio-tests",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@wdio/allure-reporter": "^7.24.0",
+        "@wdio/cli": "^7.24.0",
+        "@wdio/local-runner": "^7.24.0",
+        "@wdio/mocha-framework": "^7.24.0",
+        "@wdio/selenium-standalone-service": "^7.24.0",
+        "chromedriver": "^105.0.0",
+        "wdio-chromedriver-service": "^7.3.2"
+    },
+    "scripts": {
+        "wdio": "wdio run wdio.conf.js",
+        "Chrome": "wdio run wdio.chrome.conf.js",
+        "loginChrome": "wdio run ./wdio.firefox.conf.js --spec login.e2e.js",
+        "mainPageChrome": "wdio run ./wdio.firefox.conf.js --spec mainPage.e2e.js",
+        "Firefox":"wdio run wdio.firefox.conf.js",
+        "loginFirefox": "wdio run ./wdio.firefox.conf.js --spec login.e2e.js",
+        "mainPageFirefox": "wdio run ./wdio.firefox.conf.js --spec mainPage.e2e.js"
+    }
+}
