@@ -11,7 +11,7 @@ describe("Login page", () => {
         await expect(LoginPage.errorMessagePassword).toHaveText("Required");
     });
 
-    it.only('Error message "Please enter a valid email address." appears when user email input without "@"', async () => {
+    it('Error message "Please enter a valid email address." appears when user email input without "@"', async () => {
         await browser.url("https://telnyx.com/");
         await LoginPage.loginButtonClick();
         await LoginPage.invalidEmailInput("monatanagmail.com");
