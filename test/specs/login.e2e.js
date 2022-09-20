@@ -4,6 +4,7 @@ describe("Login page", () => {
 
     it("Error message appears when user try to login with empty input", async () => {
         await browser.url("https://telnyx.com/");
+        await LoginPage.acceptCookieClick()
         await LoginPage.loginButtonClick();
         await LoginPage.submitButtonClick();
         await expect(LoginPage.errorMessageEmail).toHaveText("Required");
