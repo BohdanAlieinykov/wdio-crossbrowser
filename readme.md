@@ -5,7 +5,7 @@
 #### Github Pages with allure html report provided
 
 ---
-###🎬 Dependencies:
+### 🎬 Dependencies:
 ```
 - "@wdio/allure-reporter": "^7.24.0"
 - "@wdio/cli": "^7.24.0"
