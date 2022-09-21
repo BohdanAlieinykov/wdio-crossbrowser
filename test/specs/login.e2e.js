@@ -85,7 +85,7 @@ describe("Login page", () => {
         await expect(LoginPage.companyEmailTextField).toExist();
     });
 
-    it('Business name input field appears, when user click "Company name" button in Single Sign-On form', async () => {
+    it.skip('Business name input field appears, when user click "Company name" button in Single Sign-On form', async () => {
         await browser.url("https://telnyx.com/");
         await LoginPage.loginButtonClick();
         await LoginPage.singleSignOnBtnClick();
