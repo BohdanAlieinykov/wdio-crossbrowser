@@ -29,10 +29,13 @@ jobs:
 
       - name: Run Firefox
         run: npm run Firefox
+
+      - name: Generate report
+        run: allure generate allure-results
       
       - name: Publish Report
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir : ./docs
+          publish_dir : ./allure-report
           enable_jekyll: true
