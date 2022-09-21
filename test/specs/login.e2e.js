@@ -79,6 +79,7 @@ describe("Login page", () => {
 
     it('Company email input field appears, when user click "Single Sign-On button"', async () => {
         await browser.url("https://telnyx.com/");
+        await browser.setWindowSize(1200, 1000);
         await LoginPage.loginButtonClick();
         await LoginPage.singleSignOnBtnClick();
         await expect(LoginPage.companyEmailLabel).toBeDisplayed();
@@ -89,7 +90,7 @@ describe("Login page", () => {
         await browser.url("https://telnyx.com/");
         await LoginPage.loginButtonClick();
         await LoginPage.singleSignOnBtnClick();
-        await browser.pause(3000)
+        await browser.pause(3000);
         await LoginPage.companyNameBtnLinkClick();
         await expect(LoginPage.businessNameLabel).toBeDisplayed();
         await expect(LoginPage.businessNameInputField).toExist();
