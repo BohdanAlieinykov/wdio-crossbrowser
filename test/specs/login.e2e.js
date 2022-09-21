@@ -79,17 +79,18 @@ describe("Login page", () => {
 
     it('Company email input field appears, when user click "Single Sign-On button"', async () => {
         await browser.url("https://telnyx.com/");
+        await browser.setWindowSize(1200, 1000);
         await LoginPage.loginButtonClick();
         await LoginPage.singleSignOnBtnClick();
         await expect(LoginPage.companyEmailLabel).toBeDisplayed();
         await expect(LoginPage.companyEmailTextField).toExist();
     });
 
-    it('Business name input field appears, when user click "Company name" button in Single Sign-On form', async () => {
+    it.skip('Business name input field appears, when user click "Company name" button in Single Sign-On form', async () => {
         await browser.url("https://telnyx.com/");
         await LoginPage.loginButtonClick();
         await LoginPage.singleSignOnBtnClick();
-        await browser.pause(3000)
+        await browser.pause(3000);
         await LoginPage.companyNameBtnLinkClick();
         await expect(LoginPage.businessNameLabel).toBeDisplayed();
         await expect(LoginPage.businessNameInputField).toExist();
