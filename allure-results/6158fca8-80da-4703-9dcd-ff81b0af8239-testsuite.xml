@@ -1,0 +1,159 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663755993003' stop='1663756207760'>
+    <name>Login page</name>
+    <title>Login page</title>
+    <test-cases>
+        <test-case start='1663755993014' status='passed' stop='1663756032955'>
+            <name>Error message appears when user try to login with empty input</name>
+            <title>Error message appears when user try to login with empty input</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756032957' status='passed' stop='1663756057226'>
+            <name>Error message "Please enter a valid email address." appears when user email input without "@"</name>
+            <title>Error message "Please enter a valid email address." appears when user email input without "@"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756057228' status='passed' stop='1663756074746'>
+            <name>List with another autorization methods appears when user click "Log in with another OAuth Provider" button</name>
+            <title>List with another autorization methods appears when user click "Log in with another OAuth Provider" button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756074747' status='passed' stop='1663756088389'>
+            <name>User directed on Github login form by click [Log in with Github] button</name>
+            <title>User directed on Github login form by click [Log in with Github] button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756088391' status='passed' stop='1663756112325'>
+            <name>User directed on LinkedIn login form by click [Log in with LinkedIn] button</name>
+            <title>User directed on LinkedIn login form by click [Log in with LinkedIn] button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756112325' status='passed' stop='1663756129741'>
+            <name>User directed on Facebook login form by click [Log in with Facebook] button</name>
+            <title>User directed on Facebook login form by click [Log in with Facebook] button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756129742' status='passed' stop='1663756152528'>
+            <name>User directed on reset password page by click "Forgot your password?" button</name>
+            <title>User directed on reset password page by click "Forgot your password?" button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756152528' status='passed' stop='1663756166745'>
+            <name>User directed on microsoft login page by click "Log in with Microsoft" button</name>
+            <title>User directed on microsoft login page by click "Log in with Microsoft" button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756166746' status='passed' stop='1663756188920'>
+            <name>User directed on sigh-up page by click "Sign up" button from login page</name>
+            <title>User directed on sigh-up page by click "Sign up" button from login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756188921' status='passed' stop='1663756207755'>
+            <name>Company email input field appears, when user click "Single Sign-On button"</name>
+            <title>Company email input field appears, when user click "Single Sign-On button"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756207757' status='pending' stop='1663756207757'>
+            <name>Business name input field appears, when user click "Company name" button in Single Sign-On form</name>
+            <title>Business name input field appears, when user click "Company name" button in Single Sign-On form</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

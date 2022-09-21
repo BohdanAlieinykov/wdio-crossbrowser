@@ -1,0 +1,119 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663756560313' stop='1663756614711'>
+    <name>Main page functional</name>
+    <title>Main page functional</title>
+    <test-cases>
+        <test-case start='1663756560315' status='passed' stop='1663756569740'>
+            <name>Drop-down appears when user hover on Products in header</name>
+            <title>Drop-down appears when user hover on Products in header</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-105.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756569742' status='passed' stop='1663756576562'>
+            <name>Drop-down appears when user hover on Solutions in header</name>
+            <title>Drop-down appears when user hover on Solutions in header</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-105.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756576564' status='passed' stop='1663756583547'>
+            <name>Drop-down appears when user hover on Resources in header</name>
+            <title>Drop-down appears when user hover on Resources in header</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-105.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756583547' status='passed' stop='1663756589174'>
+            <name>Drop-down appears when user hover on Company in header</name>
+            <title>Drop-down appears when user hover on Company in header</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-105.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756589175' status='passed' stop='1663756593770'>
+            <name>Drop-down appears when user hover on Pricing in header</name>
+            <title>Drop-down appears when user hover on Pricing in header</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-105.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756593771' status='passed' stop='1663756603620'>
+            <name>User directed to sign-up page with empty email, when email field in try for free form empty</name>
+            <title>User directed to sign-up page with empty email, when email field in try for free form empty</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-105.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756603621' status='passed' stop='1663756610491'>
+            <name>In Powerful products block displayed: Messanging API card</name>
+            <title>In Powerful products block displayed: Messanging API card</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-105.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663756610492' status='passed' stop='1663756614708'>
+            <name>In Powerful products block displayed: Video API card</name>
+            <title>In Powerful products block displayed: Video API card</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-105.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
