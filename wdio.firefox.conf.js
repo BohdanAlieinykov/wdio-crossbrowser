@@ -54,9 +54,9 @@ exports.config = {
         maxInstances: 1,
         //
         browserName: 'firefox',
-      //  'moz:firefoxOptions': {
-      //      args: ['--headless']
-      //  },
+        'moz:firefoxOptions': {
+            args: ['--headless']
+        },
         acceptInsecureCerts: true
     }
     ],
