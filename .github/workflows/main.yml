@@ -24,11 +24,14 @@ jobs:
            npm install @wdio/allure-reporter --save-dev
            npm install -g allure-commandline --save-dev
 
-      - name: Run a multi-line script
-        run: |
-          npm run Chrome
-          npm run Firefox
-          npx allure generate [allure-results] && allure open
+      - name: Run Chrome
+        run: npm run Chrome
+
+      - name: Run Firefox
+        run: npm run Firefox
+
+      - name: Run allure-report
+        run: npx allure generate [allure-results] && allure open
           
           
       - name: Publish Report
