@@ -31,7 +31,7 @@ jobs:
         run: npm run Firefox
 
       - name: Generate report
-        run: allure generate allure-results
+        run: allure generate allure-results --clean
       
       - name: Publish Report
         uses: peaceiris/actions-gh-pages@v3
